@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Raj Quest</title>
+  <link rel="icon" type="image/png"  href="css/assets/rq_favicon2.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/static/css/assets/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/css/assets/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/css/assets/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/css/assets/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/static/css/assets/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/static/css/assets/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/static/css/assets/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/static/css/assets/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="/static/css/assets/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="/static/css/assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="/static/css/assets/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/static/css/assets/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="/static/css/assets/favicon-128.png" sizes="128x128" />
+</head>
+
+<body>
+  
+  <main>
+    <div class="header"></div><a href="/" tabindex="0"><img src="css/assets/rq_favicon2.png" width="250px" style="margin-top:100px;"></a></h1>
+    </div>
+    <div class="form">
+    <form action="/new" method="post">
+
+        <div class="inputGroup">
+          <label for="id">ID</label>
+          <input type="text" name="id" id="id" tabindex="1" autocomplete="off" autofocus/>
+        </div>
+
+      <div class="inputGroup">
+        <label for="password">Password <span class="requiredMessage" style="display:none">(required)</span></label>
+        <input type="password" name="password" id="password"  tabindex="1"/>
+      </div>
+
+        <div class="inputGroup submit" >
+            <button type="submit" tabindex="2">Submit</button>
+        </div>
+      </div>
+      <br>
+      <hr/>
+
+      <div class="inputGroup">
+        <label for="content_uri">URI</label>
+        <input type="text" name="content_uri" id="content_uri"  tabindex="1" placeholder="https://.../..."/>
+      </div>
+
+      <div class="orMark">or</div>
+
+      <div class="inputGroup" >
+        <div class="inputHeader">
+          <label for="content_note">Markdown Note</label>
+        </div>
+        <textarea name="content_note" style="max-height:100px;" id="content_note" tabindex="1" placeholder="# My new note ..."></textarea>
+      </div>
+
+    </form>
+  </main>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
